@@ -82,7 +82,7 @@ export const FAQSection = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          We've collected some of the most commonly asked questions about our product and put them all in one place for your convenience
+          We&apos;ve collected some of the most commonly asked questions about our product and put them all in one place for your convenience
         </p>
       </div>
 

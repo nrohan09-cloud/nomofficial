@@ -63,7 +63,7 @@ export const TestimonialsSection = () => {
               <div className="space-y-6">
                 <Quote className="h-8 w-8 text-primary/60" />
                 <p className="text-muted-foreground leading-relaxed italic">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="pt-4 border-t border-border/20">
                   <h4 className="font-bold text-primary">{testimonial.author}</h4>

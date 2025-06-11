@@ -47,7 +47,7 @@ const testimonials: TestimonialProps[] = [
     name: "Ms. Fantasea",
     position: "Co-Founder",
     restaurant: "Houtang Hotpot",
-    quote: "NomNom Restaurant's robust database has streamlined our operations, making revenue analysis effortless. It's exactly why we chose them!",
+    quote: "NomNom Restaurant&apos;s robust database has streamlined our operations, making revenue analysis effortless. It&apos;s exactly why we chose them!",
     metrics: [
       {
         label: "Sales",
@@ -94,7 +94,7 @@ export const TestimonialSection = () => {
           className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Take control of your restaurant's success
+            Take control of your restaurant&apos;s success
           </h2>
           <Button size="lg" className="font-medium px-8">
             Book a demo
@@ -110,7 +110,7 @@ export const TestimonialSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Don't take our word for it
+            Don&apos;t take our word for it
           </h2>
         </motion.div>
 
@@ -136,7 +136,7 @@ export const TestimonialSection = () => {
 
                   <CardContent>
                     <blockquote className="italic mb-6">
-                      "{testimonial.quote}"
+                      &ldquo;{testimonial.quote}&rdquo;
                     </blockquote>
 
                     <div className="flex flex-wrap gap-4">

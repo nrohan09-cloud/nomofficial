@@ -95,7 +95,7 @@ export const HeroSection = () => {
             >
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-background/80 backdrop-blur-sm border border-primary/20">
                 <ChefHat className="w-4 h-4 mr-2" />
-                🎉 We've revolutionized restaurant management across the globe
+                🎉 We&apos;ve revolutionized restaurant management across the globe
               </Badge>
             </motion.div>
 

@@ -14,51 +14,64 @@ import {
   Star
 } from "lucide-react";
 
+interface Feature {
+  id: string;
+  title: string;
+  description: string;
+  icon: JSX.Element;
+  visualType: string;
+  metrics: {
+    primary: string;
+    secondary: string;
+    tertiary: string;
+  };
+}
+
 export const RestaurantOSSection = () => {
   const features = [
     {
       id: "billing",
       title: "Lightning-fast billing that your staff will love",
-      description: "Transform every transaction into a seamless experience. Our intelligent POS adapts to your workflow, reducing order errors by 95% and cutting billing time in half.",
+      description: "Transform every transaction into a seamless experience. Our intelligent POS adapts to your workflow, reducing order errors and streamlining the billing process.",
       icon: <Receipt className="h-8 w-8" />,
       visualType: "pos-interface",
-      metrics: { primary: "2.3s", secondary: "avg transaction", tertiary: "95% fewer errors" }
+      metrics: { primary: "Fast", secondary: "transactions", tertiary: "Fewer errors" }
     },
     {
       id: "orders",
       title: "One screen to rule all your online orders",
-      description: "Never miss an order again. Our unified dashboard brings Swiggy, Zomato, Uber Eats, and direct orders into one beautiful interface that keeps your kitchen in perfect sync.",
+      description: "Never miss an order again. Our unified dashboard brings Swiggy and Zomato, and direct orders into one beautiful interface that keeps your kitchen in perfect sync.",
       icon: <Smartphone className="h-8 w-8" />,
       visualType: "order-dashboard",
-      metrics: { primary: "12+", secondary: "platforms", tertiary: "0 missed orders" }
+      metrics: { primary: "All", secondary: "platforms", tertiary: "No missed orders" }
     },
     {
       id: "analytics",
       title: "Insights that actually drive your business forward",
-      description: "Stop guessing, start knowing. Our AI-powered analytics turn your data into actionable insights, helping successful restaurants increase profits by an average of 23%.",
+      description: "Stop guessing, start knowing. Our AI-powered analytics turn your data into actionable insights, helping restaurants make smarter decisions and grow their business.",
       icon: <TrendingUp className="h-8 w-8" />,
       visualType: "analytics-dashboard",
-      metrics: { primary: "23%", secondary: "profit increase", tertiary: "Real-time insights" }
+      metrics: { primary: "Smart", secondary: "decisions", tertiary: "Real-time insights" }
     },
     {
       id: "inventory",
       title: "Inventory management that prevents waste before it happens",
-      description: "Predictive inventory that learns your patterns. Cut food waste by 40%, eliminate stockouts, and optimize your margins with intelligent forecasting.",
+      description: "Predictive inventory that learns your patterns. Reduce food waste, eliminate stockouts, and optimize your margins with intelligent forecasting.",
       icon: <Package className="h-8 w-8" />,
       visualType: "inventory-grid",
-      metrics: { primary: "40%", secondary: "waste reduction", tertiary: "Smart forecasting" }
+      metrics: { primary: "Less", secondary: "waste", tertiary: "Smart forecasting" }
     },
     {
       id: "kitchen",
       title: "Kitchen operations at the speed of excellence",
-      description: "Transform your kitchen into a precision machine. Our KDS reduces ticket times by 35% while maintaining perfect order accuracy.",
+      description: "Transform your kitchen into a precision machine. Our KDS reduces ticket times while maintaining excellent order accuracy.",
       icon: <ChefHat className="h-8 w-8" />,
       visualType: "kitchen-display",
-      metrics: { primary: "35%", secondary: "faster service", tertiary: "100% accuracy" }
+      metrics: { primary: "Fast", secondary: "service", tertiary: "High accuracy" }
     }
   ];
 
-  const renderVisual = (feature) => {
+  const renderVisual = (feature: Feature) => {
     const baseClasses = "relative w-full h-full rounded-2xl overflow-hidden";
     
     switch (feature.visualType) {

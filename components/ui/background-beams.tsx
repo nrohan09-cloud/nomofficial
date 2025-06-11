@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef } from "react";
 
-export const BackgroundBeams = React.memo(({ className }: { className?: string }) => {
+export const BackgroundBeams = React.memo(function BackgroundBeams({ className }: { className?: string }) {
   const beamRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

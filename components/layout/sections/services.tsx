@@ -16,18 +16,18 @@ interface MetricProps {
 const metricsList: MetricProps[] = [
   {
     title: "Improve satisfaction",
-    value: "30%",
+    value: "Happy",
     description: "Faster service, happier customers.",
   },
   {
     title: "Increase efficiency",
-    value: "35%",
+    value: "Smart",
     description: "Streamline workflows, eliminate bottlenecks.",
   },
   {
-    title: "Boost tips",
-    value: "40%",
-    description: "Optimize tipping, increase earnings.",
+    title: "Boost earnings",
+    value: "More",
+    description: "Optimize operations, increase revenue.",
   },
 ];
 

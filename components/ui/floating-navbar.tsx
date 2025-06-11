@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface FloatingNavbarProps {
   children: React.ReactNode;
@@ -128,7 +129,15 @@ export function FloatingNavbar({
       >
         <div className={cn("py-3 flex items-center", !showLogoOnMobile && "hidden md:flex")}>
           {logoUrl && (
-            <img src={logoUrl} alt="Logo" className="h-8 w-auto mr-2" />
+            <Image 
+              src={logoUrl} 
+              alt="Logo" 
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="h-8 w-auto mr-2" 
+              priority
+            />
           )}
           {logoText && (
             <span className="text-xl font-bold">{logoText}</span>

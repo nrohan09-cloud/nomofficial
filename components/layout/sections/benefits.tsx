@@ -74,7 +74,7 @@ export const BenefitsSection = () => {
               transition={{ duration: 0.6 }}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
-              Your restaurant's new best friend.
+              Your restaurant&apos;s new best friend.
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export const BenefitsSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-8"
             >
-              Why use 20 tools when one's enough?
+              Why use 20 tools when one&apos;s enough?
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
