@@ -135,7 +135,7 @@ export function FloatingNavbar({
               width={0}
               height={0}
               sizes="100vw"
-              className="h-8 w-auto mr-2" 
+              className="h-8 w-auto mr-2 transition-opacity duration-300" 
               priority
             />
           )}

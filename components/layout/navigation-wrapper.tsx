@@ -2,9 +2,16 @@
 import { FloatingNavbar } from "@/components/ui/floating-navbar";
 import { ToggleTheme } from "@/components/layout/toogle-theme";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const NavigationWrapper = () => {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  
+  // Ensure component is mounted to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   
   const navItems = [
     { name: "Home", link: "#hero" },
@@ -13,8 +20,10 @@ export const NavigationWrapper = () => {
     { name: "Contact", link: "#contact" },
   ];
 
-  // Use dark mode logo when theme is dark, otherwise use light logo
-  const logoUrl = theme === "dark" ? "/logo-nomnom-dark-mode.png" : "/logo-nomnom.png";
+  // Use resolvedTheme for more reliable theme detection, fallback to light mode during loading
+  const logoUrl = mounted && resolvedTheme === "dark" 
+    ? "/logo-nomnom-dark-mode.png" 
+    : "/logo-nomnom.png";
 
   return (
     <FloatingNavbar 
