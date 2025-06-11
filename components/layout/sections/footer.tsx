@@ -58,6 +58,12 @@ export const FooterSection = () => {
             <div>
               <span className="opacity-60">Analytics & Reporting</span>
             </div>
+            <div>
+              <span className="opacity-60">QR Code Ordering</span>
+            </div>
+            <div>
+              <span className="opacity-60">Customer Loyalty</span>
+            </div>
           </div>
         </div>
 
