@@ -10,7 +10,9 @@ import {
   Monitor, 
   Smartphone,
   Wifi,
-  Clock
+  Clock,
+  QrCode,
+  Heart
 } from "lucide-react";
 
 export const ProductFeaturesSection = () => {
@@ -64,6 +66,16 @@ export const ProductFeaturesSection = () => {
       title: "99.99% Uptime",
       description: "Reliable, cloud-based system ensures your restaurant operations never stop, with industry-leading uptime guarantees.",
       icon: <Clock className="h-8 w-8" />
+    },
+    {
+      title: "QR Code Ordering",
+      description: "Enable contactless ordering with QR codes. Customers can scan, order, and pay directly from their phones for a seamless dining experience.",
+      icon: <QrCode className="h-8 w-8" />
+    },
+    {
+      title: "Customer Loyalty",
+      description: "Build lasting relationships with built-in loyalty programs. Track customer preferences, offer rewards, and increase repeat visits.",
+      icon: <Heart className="h-8 w-8" />
     }
   ];
 

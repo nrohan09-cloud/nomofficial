@@ -39,7 +39,7 @@ const FAQList: FAQProps[] = [
   },
   {
     question: "Is NomNom an App-based or a web-based POS?",
-    answer: "NomNom is a web-based POS and has an android and ios app as well for mobile devices.",
+    answer: "NomNom is a web-based POS. We are working on an android and ios app as well for mobile devices.",
     value: "item-6",
   },
   {
@@ -64,7 +64,7 @@ const FAQList: FAQProps[] = [
   },
   {
     question: "I am switching from a different POS system to NomNom. Do I need to buy new hardware?",
-    answer: "NomNom doesn't pose any such restrictions on the user. Since it is a browser app, it is compatible with any device. Apart from that, the mobile app is supported for both Android and iOS users. So, you do not need to buy a new hardware for NomNom unless your previous POS is in an inoperable condition.",
+    answer: "NomNom doesn't pose any such restrictions on the user. Since it is a browser app, it is compatible with any device. Apart from that, the mobile app which is in development will be supported for both Android and iOS users. So, you do not need to buy a new hardware for NomNom unless your previous POS is in an inoperable condition.",
     value: "item-11",
   },
   {

@@ -21,12 +21,12 @@ export const TrustedBySection = () => {
         className="text-center space-y-12"
       >
         <div className="space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Trusted by</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Built for</h2>
           <p className="text-xl md:text-2xl font-bold text-primary">
-            2500+ restaurant brands across the globe
+            Modern restaurants ready to scale
           </p>
           <p className="text-lg text-muted-foreground">
-            35000+ restaurants across the globe
+            From small cafes to large chains - launching soon
           </p>
         </div>
 

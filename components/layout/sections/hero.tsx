@@ -88,16 +88,16 @@ export const HeroSection = () => {
             className="max-w-4xl mx-auto text-center space-y-8"
           >
             {/* Badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-background/80 backdrop-blur-sm border border-primary/20">
                 <ChefHat className="w-4 h-4 mr-2" />
-                🎉 We&apos;ve revolutionized restaurant management across the globe
+                Industry-leading POS for restaurants
               </Badge>
-            </motion.div>
+            </motion.div> */}
 
             {/* Main Headline */}
             <div className="space-y-6">
